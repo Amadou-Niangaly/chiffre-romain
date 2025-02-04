@@ -3,6 +3,7 @@ const convertBtn = document.getElementById('convert-btn');
 const output = document.getElementById('output');
 
 convertBtn.addEventListener('click', () => {
+    event.preventDefault();
     if (number.value === "") {
         output.style.fontSize = '25px';
         output.style.color = 'red';
